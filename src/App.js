@@ -1,27 +1,34 @@
 import './App.css';
-import Hello from "./components/helloWorld"
+import NomesMugiwaras from './components/PropsSingle'
+import Pessoa from "./components/Pessoa"
+import Pessoa2 from "./components/Pessoa2"
+
+const nami = "Nami"
+const usop = 'Usop'
+const chopper = 'Chopper'
 
 function App() {
- const name = 'Mokey D. Luffy'
-
- function calculaNUM (A,B){
-   
-   return eval(A, B)
- }
-
- const calculoEval = calculaNUM('40/2')
-
- const placeHolder = 'https://via.placeholder.com/300'
-
-
   return (
     <div className="App">
-      <h1>Ola React!</h1>
-      <h2>Interpolando variavel com resultado: {name}</h2>
-      <p>Meu primeiro projeto React</p>
-      <p>resultado: {calculoEval}</p>
-      <img src = {placeHolder}/>
-      <Hello/>
+      <NomesMugiwaras nome="Luffy" />
+      <NomesMugiwaras nome="Zoro" />
+      <NomesMugiwaras nome="Sanji" />
+      <NomesMugiwaras nome={nami} />
+      <NomesMugiwaras nome={usop} />
+      <NomesMugiwaras nome={chopper} />
+
+      <Pessoa
+        foto='https://via.placeholder.com/150'
+        nome='Guilherme R.'
+        idade='24'
+        profissão='Programador'
+      />
+      <Pessoa2
+        foto='https://via.placeholder.com/150'
+        nome='William'
+        idade='42'
+        profissao='Metalurgico'
+      />
     </div>
   );
 }
