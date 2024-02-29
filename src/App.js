@@ -1,6 +1,6 @@
 import './App.css';
-import Hello from "./components/helloWorld"
-import List from "./components/List"
+import Evento from "./components/Evento"
+import Form from "./components/FormEvent"
 
 function App() {
  const name = 'Mokey D. Luffy'
@@ -17,13 +17,10 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Ola React!</h1>
-      <h2>Interpolando variavel com resultado: {name}</h2>
-      <p>Meu primeiro projeto React</p>
-      <p>resultado: {calculoEval}</p>
-      <img src = {placeHolder}/>
-      <Hello/>
-      <List/>
+      <h1>Testando Eventos</h1>
+      <Evento></Evento>
+
+      <Form/>
     </div>
   );
 }
