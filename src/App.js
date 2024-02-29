@@ -1,5 +1,6 @@
 import './App.css';
 import Hello from "./components/helloWorld"
+import List from "./components/List"
 
 function App() {
  const name = 'Mokey D. Luffy'
@@ -22,6 +23,7 @@ function App() {
       <p>resultado: {calculoEval}</p>
       <img src = {placeHolder}/>
       <Hello/>
+      <List/>
     </div>
   );
 }
